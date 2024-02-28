@@ -1,2 +1,2 @@
 # SquidyBot
-Chess bot built from scratch in Go.
+A chess engine built from scratch in Go.
