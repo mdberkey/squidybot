@@ -1,4 +1,4 @@
-package main
+package board
 
 import (
 	"fmt"
@@ -41,9 +41,10 @@ type board struct {
 
 func newBoard() {
 	temp_pieces := board{}.bb_pieces
+	fmt.Println(temp_pieces)
 }
 
-func printBitboard(bitboard uint64) {
+func PrintBitboard(bitboard uint64) {
 	const lastBit uint64 = 63
 	for rank := 0; rank < 8; rank++ {
 		for file := 7; file >= 0; file-- {
@@ -59,6 +60,6 @@ func printBitboard(bitboard uint64) {
 }
 
 func main() {
-	printBitboard(123456)
+	PrintBitboard(123456)
 	newBoard()
 }  
